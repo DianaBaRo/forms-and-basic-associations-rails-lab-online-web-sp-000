@@ -32,6 +32,9 @@ class Song < ActiveRecord::Base
       note = Note.find_or_create_by(content: content)
       self.notes << note
     end
+  end
+
+  def note_contents
 
   end
 end
